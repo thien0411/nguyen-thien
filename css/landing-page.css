@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/unl.JPG) no-repeat center center;
     background-size: cover;
 }
 
@@ -104,12 +104,12 @@ h6 {
 }
 
 .section-heading {
-    margin-bottom: 30px;
+    margin-bottom: 2px;
 }
 
 .section-heading-spacer {
     float: left;
-    width: 200px;
+    width: 250px;
     border-top: 3px solid #e7e7e7;
 }
 
