@@ -18,9 +18,20 @@
     <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+   
+    <script src="js/date.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>  
+    <script>
+        $(function () {
+            $('#birthDate').datepicker();
+        });
+    </script>
+  
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -274,7 +285,21 @@
 
                 </div>
 
-                <!-- /.container -->
+                 /.container -->
+                 <div class="container">
+                    <h1>How old Are You?</h1>
+                
+                    <p>Please indicate your birthday:</p>
+                
+                    <input type="text" id="birthDate" value="04/11/1993" />
+                
+                    <button type="button" class="btn btn-lrg btn-primary" onclick="computeAge()">Calculate!</button>
+                
+                    <p id="message"></p>
+                  </div>
+                
+                  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+                  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     </div>
 
     <!-- Footer -->
